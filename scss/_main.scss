@@ -1,0 +1,706 @@
+.banners {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.banner__items {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 30px;
+}
+
+// Баннер -1 ====================
+
+.banner-one {
+   background: #313234 url("../images/banner-01-bg.png");
+   background-repeat: no-repeat;
+   background-size: 31%;
+   background-position: 100% 120%;
+   max-width: 770px;
+}
+
+.banner-one__body {
+   padding: 60px 60px 60px 60px;
+   border: 1px solid #fff;
+   height: 100%;
+}
+
+@media (max-width: 770px) {
+   .banner-one__body {
+      @include adaptiv-value("padding-top", 60, 15, 0);
+      @include adaptiv-value("padding-bottom", 60, 15, 0);
+      @include adaptiv-value("padding-left", 60, 15, 0);
+      @include adaptiv-value("padding-right", 60, 15, 0);
+   }
+}
+
+.banner-one__title-box {
+   display: flex;
+   align-items: center;
+   margin-bottom: 23px;
+}
+
+@media (max-width: 770px) {
+   .banner-one__title-box {
+      @include adaptiv-value("margin-bottom", 23, 15, 0);
+   }
+}
+
+.banner-one__title-img {
+   display: block;
+   width: 90px;
+   height: 106px;
+   margin-right: 38px;
+}
+
+@media (max-width: 770px) {
+   .banner-one__title-img {
+      @include adaptiv-value("width", 90, 45, 0);
+      @include adaptiv-value("height", 106, 53, 0);
+      @include adaptiv-value("margin-right", 38, 15, 0);
+   }
+}
+
+.banner-one__title {
+   font-size: 2.1875rem;
+   line-height: 125.714286%; /* 44px/35 */
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+@media (max-width: 770px) {
+   .banner-one__title {
+      @include adaptiv-value("font-size", 35, 15, 0);
+      @include adaptiv-value("line-height", 44, 21, 0);
+   }
+}
+
+.banner-one__title--color {
+   color: #00aff9;
+}
+
+.banner-one__text {
+   font-size: 1.0625rem;
+   line-height: 117.647059%; /* 20px/17 */
+   font-weight: 500;
+   color: #ffffff;
+   max-width: 600px;
+   margin-bottom: 47px;
+}
+
+@media (max-width: 770px) {
+   .banner-one__text {
+      @include adaptiv-value("font-size", 17, 12, 0);
+      @include adaptiv-value("line-height", 20, 15, 0);
+      @include adaptiv-value("margin-bottom", 47, 15, 0);
+   }
+}
+
+.banner-one__price-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.125rem;
+   line-height: 122.222222%; /* 22px/18 */
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 283px;
+   height: 70px;
+   background-color: #ffc107;
+   margin-left: auto;
+   margin-right: auto;
+   transition: background-color 0.3s;
+}
+
+@media (max-width: 770px) {
+   .banner-one__price-btn {
+      @include adaptiv-value("font-size", 18, 15, 0);
+      @include adaptiv-value("line-height", 22, 16, 0);
+      @include adaptiv-value("width", 283, 230, 0);
+      @include adaptiv-value("height", 70, 50, 0);
+   }
+}
+
+.banner-one__price-btn:hover {
+   background-color: #e0ac00;
+   transition: background-color 0.3s;
+}
+
+.banner-one__price-img {
+   display: block;
+   width: 12px;
+   height: 21px;
+   margin-left: 10px;
+}
+
+@media (max-width: 770px) {
+   .banner-one__price-img {
+      @include adaptiv-value("width", 12, 8, 0);
+      @include adaptiv-value("height", 21, 14, 0);
+   }
+}
+// Баннер -1 ====================
+
+// Баннер -2 ====================
+
+.banner-two {
+   background: url("../images/banner-02-bg.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 100%;
+   // background: url("../images/banner-02-bg-4.png"), url("../images/banner-02-bg-1.png"),
+   //    url("../images/banner-02-bg-2.png"), url("../images/banner-02-bg-3.png"), #313234;
+   // background-repeat: no-repeat;
+   // background-size: 30%, 30%, 30%, 30%;
+   // background-position: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+   max-width: 770px;
+}
+
+.banner-two__body {
+   padding: 60px 60px 60px 60px;
+   border: 1px solid #fff;
+   height: 100%;
+}
+
+@media (max-width: 770px) {
+   .banner-two__body {
+      @include adaptiv-value("padding-top", 60, 15, 0);
+      @include adaptiv-value("padding-bottom", 60, 15, 0);
+      @include adaptiv-value("padding-left", 60, 15, 0);
+      @include adaptiv-value("padding-right", 60, 15, 0);
+   }
+}
+
+.banner-two__title-box {
+   display: flex;
+   align-items: center;
+   margin-bottom: 23px;
+}
+
+@media (max-width: 770px) {
+   .banner-two__title-box {
+      @include adaptiv-value("margin-bottom", 23, 15, 0);
+   }
+}
+
+.banner-two__title-img {
+   display: block;
+   width: 87px;
+   height: 88px;
+   margin-right: 38px;
+}
+
+@media (max-width: 770px) {
+   .banner-two__title-img {
+      @include adaptiv-value("width", 87, 43, 0);
+      @include adaptiv-value("height", 88, 44, 0);
+      @include adaptiv-value("margin-right", 38, 15, 0);
+   }
+}
+
+.banner-two__title {
+   font-size: 2.0625rem;
+   line-height: 133.333333%; /* 44px/33 */
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+@media (max-width: 770px) {
+   .banner-two__title {
+      @include adaptiv-value("font-size", 33, 15, 0);
+      @include adaptiv-value("line-height", 44, 21, 0);
+   }
+}
+
+.banner-two__title--color {
+   color: #00aff9;
+}
+
+.banner-two__text {
+   font-size: 1.0625rem;
+   line-height: 117.647059%; /* 20px/17 */
+   font-weight: 500;
+   color: #ffffff;
+   max-width: 600px;
+   margin-bottom: 47px;
+}
+
+@media (max-width: 770px) {
+   .banner-two__text {
+      @include adaptiv-value("font-size", 17, 12, 0);
+      @include adaptiv-value("line-height", 20, 15, 0);
+      @include adaptiv-value("margin-bottom", 47, 15, 0);
+   }
+}
+
+.banner-two__price-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.125rem;
+   line-height: 122.222222%; /* 22px/18 */
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 283px;
+   height: 70px;
+   background-color: #ffc107;
+   margin-left: auto;
+   margin-right: auto;
+   transition: background-color 0.3s;
+}
+
+@media (max-width: 770px) {
+   .banner-two__price-btn {
+      @include adaptiv-value("font-size", 18, 15, 0);
+      @include adaptiv-value("line-height", 22, 16, 0);
+      @include adaptiv-value("width", 283, 230, 0);
+      @include adaptiv-value("height", 70, 50, 0);
+   }
+}
+
+.banner-two__price-btn:hover {
+   background-color: #e0ac00;
+   transition: background-color 0.3s;
+}
+
+.banner-two__price-img {
+   display: block;
+   width: 12px;
+   height: 21px;
+   margin-left: 10px;
+}
+
+@media (max-width: 770px) {
+   .banner-two__price-img {
+      @include adaptiv-value("width", 12, 8, 0);
+      @include adaptiv-value("height", 21, 14, 0);
+   }
+}
+// Баннер -2 ====================
+
+// Баннер -3 ====================
+
+.banner-three {
+   background: #313234;
+   max-width: 770px;
+}
+
+.banner-three__body {
+   padding: 60px 60px 60px 60px;
+   border: 1px solid #fff;
+   height: 100%;
+}
+
+@media (max-width: 770px) {
+   .banner-three__body {
+      @include adaptiv-value("padding-top", 60, -15, 0);
+      @include adaptiv-value("padding-bottom", 60, -15, 0);
+      @include adaptiv-value("padding-left", 60, -15, 0);
+      @include adaptiv-value("padding-right", 60, -15, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-three__body {
+      padding: 15px 15px 15px 15px;
+   }
+}
+
+.banner-three__title-box {
+   display: flex;
+   align-items: center;
+   margin-bottom: 23px;
+}
+
+@media (max-width: 770px) {
+   .banner-three__title-box {
+      @include adaptiv-value("margin-bottom", 23, 15, 0);
+   }
+}
+
+.banner-three__title-img {
+   display: block;
+   width: 87px;
+   height: 88px;
+   margin-right: 38px;
+}
+
+@media (max-width: 770px) {
+   .banner-three__title-img {
+      @include adaptiv-value("width", 87, 43, 0);
+      @include adaptiv-value("height", 88, 44, 0);
+      @include adaptiv-value("margin-right", 38, 15, 0);
+   }
+}
+
+.banner-three__title {
+   font-size: 2.0625rem;
+   line-height: 133.333333%; /* 44px/33 */
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+@media (max-width: 770px) {
+   .banner-three__title {
+      @include adaptiv-value("font-size", 33, 15, 0);
+      @include adaptiv-value("line-height", 44, 21, 0);
+   }
+}
+
+.banner-three__title--color {
+   color: #00aff9;
+}
+
+.banner-three__text {
+   font-size: 1.0625rem;
+   line-height: 117.647059%; /* 20px/17 */
+   font-weight: 500;
+   color: #ffffff;
+   max-width: 600px;
+   margin-bottom: 47px;
+}
+
+@media (max-width: 770px) {
+   .banner-three__text {
+      @include adaptiv-value("font-size", 17, 12, 0);
+      @include adaptiv-value("line-height", 20, 15, 0);
+      @include adaptiv-value("margin-bottom", 47, 15, 0);
+   }
+}
+
+.banner-three__buttons {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 20px;
+}
+
+@media (max-width: 770px) {
+   .banner-three__buttons {
+      @include adaptiv-value("column-gap", 20, 10, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-three__buttons {
+      flex-direction: column;
+      column-gap: 0px;
+      row-gap: 15px;
+   }
+}
+
+.banner-three__price-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.125rem;
+   line-height: 122.222222%; /* 22px/18 */
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 283px;
+   height: 70px;
+   background-color: #ffc107;
+   transition: background-color 0.3s;
+}
+
+@media (max-width: 770px) {
+   .banner-three__price-btn {
+      @include adaptiv-value("font-size", 18, 12, 0);
+      @include adaptiv-value("line-height", 22, 16, 0);
+      @include adaptiv-value("width", 283, 130, 0);
+      @include adaptiv-value("height", 70, 50, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-three__price-btn {
+      width: 100%;
+   }
+}
+
+.banner-three__price-btn:hover {
+   background-color: #e0ac00;
+   transition: background-color 0.3s;
+}
+
+.banner-three__price-img {
+   display: block;
+   width: 12px;
+   height: 21px;
+   margin-left: 10px;
+}
+
+@media (max-width: 770px) {
+   .banner-three__price-img {
+      @include adaptiv-value("width", 12, 7, 0);
+      @include adaptiv-value("height", 21, 12, 0);
+   }
+}
+
+.banner-three__works-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.125rem;
+   line-height: 122.222222%; /* 22px/18 */
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 326px;
+   height: 68px;
+   padding: 13px 13px 13px 13px;
+   background-color: rgba(255, 193, 7, 0);
+   border: 1px solid #ffffff;
+   transition: background-color 0.3s;
+}
+
+@media (max-width: 770px) {
+   .banner-three__works-btn {
+      @include adaptiv-value("font-size", 18, 12, 0);
+      @include adaptiv-value("line-height", 22, 16, 0);
+      @include adaptiv-value("width", 326, 155, 0);
+      @include adaptiv-value("height", 68, 50, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-three__works-btn {
+      width: 100%;
+   }
+}
+
+.banner-three__works-btn:hover {
+   background-color: #e0ac00;
+   transition: background-color 0.3s;
+}
+
+.banner-three__works-img {
+   display: block;
+   width: 29px;
+   height: 29px;
+   margin-right: 10px;
+}
+
+@media (max-width: 770px) {
+   .banner-three__works-img {
+      @include adaptiv-value("width", 29, 15, 0);
+      @include adaptiv-value("height", 29, 15, 0);
+   }
+}
+// Баннер -3 ====================
+
+// Баннер -4 ====================
+
+.banner-four {
+   background: #00aff9;
+   max-width: 770px;
+}
+
+.banner-four__body {
+   padding: 60px 60px 60px 60px;
+   border: 1px solid #fff;
+   height: 100%;
+}
+
+@media (max-width: 770px) {
+   .banner-four__body {
+      @include adaptiv-value("padding-top", 60, -15, 0);
+      @include adaptiv-value("padding-bottom", 60, -15, 0);
+      @include adaptiv-value("padding-left", 60, -15, 0);
+      @include adaptiv-value("padding-right", 60, -15, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-four__body {
+      padding: 15px 15px 15px 15px;
+   }
+}
+
+.banner-four__title-box {
+   display: flex;
+   align-items: center;
+   margin-bottom: 23px;
+}
+
+@media (max-width: 770px) {
+   .banner-four__title-box {
+      @include adaptiv-value("margin-bottom", 23, 15, 0);
+   }
+}
+
+.banner-four__title-img {
+   display: block;
+   width: 87px;
+   height: 88px;
+   margin-right: 38px;
+}
+
+@media (max-width: 770px) {
+   .banner-four__title-img {
+      @include adaptiv-value("width", 87, 43, 0);
+      @include adaptiv-value("height", 88, 44, 0);
+      @include adaptiv-value("margin-right", 38, 15, 0);
+   }
+}
+
+.banner-four__title {
+   font-size: 2.0625rem;
+   line-height: 133.333333%; /* 44px/33 */
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+@media (max-width: 770px) {
+   .banner-four__title {
+      @include adaptiv-value("font-size", 33, 15, 0);
+      @include adaptiv-value("line-height", 44, 21, 0);
+   }
+}
+
+.banner-four__text {
+   font-size: 1.0625rem;
+   line-height: 117.647059%; /* 20px/17 */
+   font-weight: 500;
+   color: #ffffff;
+   max-width: 600px;
+   margin-bottom: 47px;
+}
+
+@media (max-width: 770px) {
+   .banner-four__text {
+      @include adaptiv-value("font-size", 17, 12, 0);
+      @include adaptiv-value("line-height", 20, 15, 0);
+      @include adaptiv-value("margin-bottom", 47, 15, 0);
+   }
+}
+
+.banner-four__buttons {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 20px;
+}
+
+@media (max-width: 770px) {
+   .banner-four__buttons {
+      @include adaptiv-value("column-gap", 20, 10, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-four__buttons {
+      flex-direction: column;
+      column-gap: 0px;
+      row-gap: 15px;
+   }
+}
+
+.banner-four__price-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.125rem;
+   line-height: 122.222222%; /* 22px/18 */
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 283px;
+   height: 70px;
+   background-color: #ffc107;
+   transition: background-color 0.3s;
+}
+
+@media (max-width: 770px) {
+   .banner-four__price-btn {
+      @include adaptiv-value("font-size", 18, 12, 0);
+      @include adaptiv-value("line-height", 22, 16, 0);
+      @include adaptiv-value("width", 283, 130, 0);
+      @include adaptiv-value("height", 70, 50, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-four__price-btn {
+      width: 100%;
+   }
+}
+
+.banner-four__price-btn:hover {
+   background-color: #e0ac00;
+   transition: background-color 0.3s;
+}
+
+.banner-four__price-img {
+   display: block;
+   width: 12px;
+   height: 21px;
+   margin-left: 10px;
+}
+
+@media (max-width: 770px) {
+   .banner-four__price-img {
+      @include adaptiv-value("width", 12, 7, 0);
+      @include adaptiv-value("height", 21, 12, 0);
+   }
+}
+
+.banner-four__works-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.125rem;
+   line-height: 122.222222%; /* 22px/18 */
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 326px;
+   height: 68px;
+   padding: 13px 13px 13px 13px;
+   background-color: rgba(255, 193, 7, 0);
+   border: 1px solid #ffffff;
+   transition: background-color 0.3s;
+}
+
+@media (max-width: 770px) {
+   .banner-four__works-btn {
+      @include adaptiv-value("font-size", 18, 12, 0);
+      @include adaptiv-value("line-height", 22, 16, 0);
+      @include adaptiv-value("width", 326, 155, 0);
+      @include adaptiv-value("height", 68, 50, 0);
+   }
+}
+
+@media (max-width: 525px) {
+   .banner-four__works-btn {
+      width: 100%;
+   }
+}
+
+.banner-four__works-btn:hover {
+   background-color: #e0ac00;
+   transition: background-color 0.3s;
+}
+
+.banner-four__works-img {
+   display: block;
+   width: 29px;
+   height: 29px;
+   margin-right: 10px;
+}
+
+@media (max-width: 770px) {
+   .banner-four__works-img {
+      @include adaptiv-value("width", 29, 15, 0);
+      @include adaptiv-value("height", 29, 15, 0);
+   }
+}
+// Баннер -4 ====================

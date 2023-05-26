@@ -1,0 +1,36 @@
+@import "_reset";
+@import "_fonts";
+@import "_header";
+@import "_main";
+@import "_footer";
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+.footer {
+   flex: 0 0 auto;
+}
+
+.container {
+   max-width: 1330px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+body {
+   height: 100%;
+   font-family: "Avenir Next Cyr", sans-serif;
+   font-weight: 500;
+   font-size: 1rem;
+   color: #ffffff;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
+}
